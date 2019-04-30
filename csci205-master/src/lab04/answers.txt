@@ -1,0 +1,122 @@
+/* *****************************************
+
+* CSCI205 - Software Engineering and Design
+
+* Spring 2017
+
+* Instructor: Professor Dancy
+
+* Section: 1 PM
+
+*
+
+* Name: Gabe Gomez
+
+* Date: 01/27/2017
+
+*
+
+* Lab / Assignment: Lab 4, answers text file
+
+*
+
+* Description: A file that holds all my answers to lab 4 questions.
+
+*
+
+* *****************************************/
+
+#### Q1 ####
+$ git log --decorate --oneline --all
+38d312f (HEAD, myFeature, master) Test2
+8f95f31 Test1
+c835ce4 more work
+eb61791 Init commit
+
+
+$ git branch
+* master
+  myFeature
+
+#### Q2 ####
+$ git log --decorate --oneline --all
+38d312f (myFeature) Test2
+8f95f31 Test1
+c835ce4 (HEAD, master) more work
+eb61791 Init commit
+
+#### Q3 ####
+$ git log --decorate --oneline --graph --all
+* 846d05c (HEAD, bugFix) Fixed bug
+| * 38d312f (myFeature) Test2
+| * 8f95f31 Test1
+|/  
+* c835ce4 (master) more work
+* eb61791 Init commit
+
+#### Q4 ####
+$ git log --graph --all --oneline --decorate
+* 846d05c (HEAD, master, bugFix) Fixed bug
+| * 38d312f (myFeature) Test2
+| * 8f95f31 Test1
+|/  
+* c835ce4 more work
+* eb61791 Init commit
+
+### Q5 ####
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("Init commit\n more work");
+<<<<<<< HEAD 
+		System.out.println("Fixed bug\n");
+=======
+		System.out.println("This is the test after changing 						branches");
+		System.out.println("This is the second test");
+>>>>>>> myFeature
+	}
+}
+
+#### Q6 ####
+$ git log --graph --all --oneline --decorate
+*   85abf05 (HEAD, master) Merged myFeature
+|\  
+| * 38d312f (myFeature) Test2
+| * 8f95f31 Test1
+* | 846d05c Fixed bug
+|/  
+* c835ce4 more work
+* eb61791 Init commit
+
+#### Q7 ####
+
+Generating 10,000 numbers...
+sd: 1.007263
+TIME: 4909411000.000 usec
+alt_sd: 1.007
+TIME: 4909411000.000 usec
+alt_sd computed in 19.56% of the time of sd
+
+Generating 100,000 numbers...
+sd: 1.000023
+TIME: 6971625000.000 usec
+alt_sd: 1.000
+TIME: 6971625000.000 usec
+alt_sd computed in 73.63% of the time of sd
+
+Generating 1,000,000 numbers...
+sd: 1.000097
+TIME: 15530332000.000 usec
+alt_sd: 1.000
+TIME: 15530332000.000 usec
+alt_sd computed in 48.01% of the time of sd
+
+Generating 5,000,000 numbers...
+sd: 0.999852
+TIME: 34601291000.000 usec
+alt_sd: 1.000
+TIME: 34601291000.000 usec
+alt_sd computed in 49.17% of the time of sd
+
+#### Q8 ####
+The second approach for computing standard deviation performs so much faster than the first becuase in the first approach, we had to iterate through the entire list two times, whie in the second approach, we only had to iterate through the loops once. Without the second loop, run time is greatly decreased. 
+

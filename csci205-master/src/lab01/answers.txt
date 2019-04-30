@@ -1,0 +1,107 @@
+1.1) /home/accounts/student/g/gag014
+
+1.2) The -a does not ignore entries starting with .
+
+1.3) The -l option simply gives a long list format of the same information that ls would normally give. 
+
+1.4) The -c with -lt option sorts by time of last modification and sorts with the most recent file first. 
+
+1.5) To the previous step, but within the reverse order, all you do is add an r in the -lt. So in all it should look like, "ls -c -ltr".
+
+1.6) In order to see the output by file size, you need to do either "ls -S" or "ls -lS" (depending on how you wish to see your information).
+
+1.7) 
+
+[gag014@brki164-lnx-16 ~]$ ls -lR csci205
+csci205:
+total 4
+drwx--x--x 3 gag014 student 4096 Jan 18 13:34 src
+
+csci205/src:
+total 4
+drwx--x--x 2 gag014 student 4096 Jan 18 13:48 lab01
+
+csci205/src/lab01:
+total 4
+-rw------- 1 gag014 student 586 Jan 18 13:48 answers.txt
+
+2.1) A version control system is a system that records changes to a file, or set of files, over time so that you can recall specific versions later. 
+
+2.2) One type of version control system is Local Version Control Systems. This Version control would be best for files that you are keeping on your local computer. Another type of version control system is Centralized Version Control Systems. This would be best used when needing to share files with other developers you are collaborating with. The third type version control systems is Distrubuted Version Control Systems. This is best used when working with a client who wishes to have access to the repository of a project that is being worked onm and for constantly having a full backup of all the data. 
+
+2.3) Git is a Distrubuted Version Control System.
+
+2.4) No information is needed from another computer on the network. One reason this is beneficial is because you have the entire history of the project right on the local disk. Another benefit is that many operations are quicker and even seem instantaneous. 
+
+2.5) Addressed with a key-value data store. This means that you can insert any content into it, and it will give you back a key that you can use to retrieve the content again at a later time. 
+
+2.6) The three states that a file can be in on Git is a working directory, staging area or the .git directory, which is the repository. The repository is where the data and database for your project is held. The working directory is where one can modify their project. The staging area is where information is stored for what will go into my next commit for the repository. 
+
+ssh location of repository: git@gitlab.bucknell.edu:gag014/csci205.git
+
+Banner: 
+/* *****************************************
+
+* CSCI205 - Software Engineering and Design
+
+* Spring 2017
+
+* Instructor: Your instructor
+
+* Section: List time of your lecture
+
+*
+
+* Name: Your Name
+
+* Date: xx/xx/2017
+
+*
+
+* Lab / Assignment:
+
+*
+
+* Description:
+
+*
+
+* *****************************************/
+
+3.1) Bytecodes are the machine language of the Java Virtual Machine. They are generated when being compiled into a .class file by the javac compiler. 
+
+3.2) One benefit is that since the virtual machine is available on many different operating systems, the same .class files can be run on Windowns, Mac OS, Linuc or the Solaris OS. 
+
+3.3) A downside is that if a crash occurs, most, if not all, of the work will be wiped. 
+
+3.4) I do believe everything that is said. Since I will be incorporating a new language to my repertoire, it is only believable to my coding length will be less and still provide better code overall. I also believe all that is said how I could write a file once, yet run from anywhere. 
+
+3.5) There are single line comments, multi-line comments and documentation comments. 
+
+3.6) In order to run the program, first you must ensure you save it for any recent changes that you may want to keep. Then after that within the terminal window, type in javac, along with the file name (you also have to write the path to the file name as well). In this case, assuming you are within the file holding "MyProgram.java", you type "javac MyProgram.java" in the terminal window. Then to run it, you type in "java MyProgram.java" and it should run. 
+
+4.1) Prints a String and then terminate the line. This method behaves as though it invokes print(String) and then println().
+
+4.2) "in" is the standard input stream. 
+
+5.1) The result was 1 and not 1.5 because both x and y are integer types, which means the result will also be an integer, thus giving the answer 1. 
+
+5.2) The answer to the code snippet above was 1.0. 
+
+6.1) Contains the command0line arguments that have been given
+
+6.2) That the method has no return value. 
+
+6.3) Abbreviations or names used to represent a particular variable, class or method. 
+
+6.4) Keywords are words that can not be used as an identifier because they hold special meaning within Java.
+
+6.5) Float is a 32-bit floating point while double is a 64-bit floating point. They are both floating points.
+
+6.6) A similarity is that they are primitive data types. The difference between them is the amount of bits that each of them are. For example, a byte is 8-bit while a long is 64-bit. 
+
+6.7)It is not a primitive type. It is a data type that represents data that is a sequence of characters. It is a class.
+
+6.8) String name = Gabe Gomez
+
+6.9) Scope of a variable is dependant upon its position within the programming code. For example, if you have a variable in funciton A, that variable does not exist in function B unless it is re-initialized (or made global if java even has such a feature). 

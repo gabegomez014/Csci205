@@ -1,0 +1,117 @@
+/* *****************************************
+
+* CSCI205 - Software Engineering and Design
+
+* Spring 2017
+
+* Instructor: Professor Dancy
+
+* Section: 1 PM lecture
+
+*
+
+* Name: Gabe Gomez
+
+* Date: 01/19/2017
+
+*
+
+* Lab / Assignment: Lab 3, answers.txt file
+
+*
+
+* Description: The file that holds the answes to my lab 3 questions
+
+*
+
+* *****************************************/
+
+#### Q1 ####
+$ git log --oneline --decorate
+c835ce4 (HEAD, master) more work
+eb61791 Init commit
+
+#### Q2 ####
+$ git log --decorate --oneline
+c835ce4 (HEAD, myFeature, master) more work
+eb61791 Init commit
+
+#### Q3 ####
+$ git log --oneline --decorate
+38d312f (HEAD, myFeature) Test2
+8f95f31 Test1
+c835ce4 (master) more work
+eb61791 Init commit
+
+#### Q4 ####
+$ git diff master
+diff --git a/Main.java b/Main.java
+index 3f52de9..0e8f3a9 100644
+--- a/Main.java
++++ b/Main.java
+@@ -29,5 +29,7 @@
+ public class Main {
+        public static void main(String[] args) {
+                System.out.println("Init commit\n more work");
++               System.out.println("This is the test after changing             
++               System.out.println("This is the second test");
+        }
+ }
+
+#### Q5 ####
+$ git log --oneline --decorate --all
+38d312f (myFeature) Test2
+8f95f31 Test1
+c835ce4 (HEAD, master) more work
+eb61791 Init commit
+
+#### Q6 ####
+$ git log --oneline --decorate --all
+38d312f (HEAD, myFeature, master) Test2
+8f95f31 Test1
+c835ce4 more work
+eb61791 Init commit
+
+#### Q7 ####
+What fibonacci number do you want?
+20
+Recursive fib: 6765
+Non-recursive fib: 6765
+Recusive Fibonacci took: 98934149783548.280000 ms
+Non-recursive Fibonacci took: 0.024696 ms
+
+What fibonacci number do you want?
+30
+Recursive fib: 832040
+Non-recursive fib: 832040
+Recusive Fibonacci took: 98939680808377.250000 ms
+Non-recursive Fibonacci took: 0.024261 ms
+
+What fibonacci number do you want?
+40
+Recursive fib: 102334155
+Non-recursive fib: 102334155
+Recusive Fibonacci took: 98944988524189.530000 ms
+Non-recursive Fibonacci took: 0.026647 ms
+
+50
+Recursive fib: -298632863
+Non-recursive fib: -298632863
+Recusive Fibonacci took: 98996252885541.120000 ms
+Non-recursive Fibonacci took: 0.028364 ms
+
+Pretty sure that the program stopped running considering the values are negative at this point. I believe one reason the recursive option is more computationally expensive than the non-recursive solution is because, for one, every time that the function calls itself, it must check all of the base cases until it finds one that fits, which can be time consuming. Within the non-recursive solution, base cases need not be checked, and less comparisons have to be checked since it had to only check if the temporary variable in the while loop was equal to whatever n is. 
+
+Exercise 5:
+
+1.1) t.length() = 8
+1.2) s.length() + t.length() = 13
+1.3) s + t = "HelloCSCI 205"
+1.4) s.substring(2,5) = "llo"
+1.5) s.endsWith("lo") = true
+1.6) t.charAt(5) = 2
+1.7) t.indexOf('5') = 7
+1.8) s.toUpperCase() = "HELLO"
+1.9) t.substring(0,4) = "CSCI200"
+1.10) The two are one in the same. They are both used to create a string that will produce the same thing.
+
